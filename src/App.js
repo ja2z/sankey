@@ -10,7 +10,6 @@ import { useMemo, useRef } from "react";
 import {
   client,
   useConfig,
-  useElementColumns,
   useElementData,
 } from "@sigmacomputing/plugin";
 
@@ -24,7 +23,6 @@ client.config.configureEditorPanel([
 
 function App() {
   const config = useConfig();
-  const columns = useElementColumns(config.source);
   const sigmaData = useElementData(config.source);
   const ref = useRef();
   const options = useMemo(() => {
