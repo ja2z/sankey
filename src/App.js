@@ -26,19 +26,10 @@ function App() {
   const config = useConfig();
   const columns = useElementColumns(config.source);
   const sigmaData = useElementData(config.source);
-  console.log("sankey: raw input data", config, columns, sigmaData);
   const ref = useRef();
   const options = useMemo(() => {
     const dimensions = config.dimension;
     const measures = config.measures;
-    console.log(
-      "sankey: got data",
-      config,
-      sigmaData,
-      columns,
-      dimensions,
-      measures
-    );
 
     // transform sigmaData --> sankey data
     let dataMap = [];
@@ -79,10 +70,7 @@ function App() {
       };
       return options;
     }
-  }, [columns, config, sigmaData]);
-
-  //console.log("data", data);
-  //useEffect(() => renderChart(transform(data), ref));
+  }, [config, sigmaData]);
 
   return (
     <div>
