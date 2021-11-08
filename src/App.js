@@ -6,7 +6,7 @@ import HighchartsReact from "highcharts-react-official";
 import * as highchartsSankey from "highcharts/modules/sankey";
 //npm install highcharts highcharts-react-official highcharts-sankey
 
-import { useMemo, useEffect, useRef } from "react";
+import { useMemo, useRef } from "react";
 import {
   client,
   useConfig,
