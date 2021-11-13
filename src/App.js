@@ -1,12 +1,11 @@
 import "./App.css";
 
-import React from "react";
+import { useMemo, useRef } from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import * as highchartsSankey from "highcharts/modules/sankey";
 //npm install highcharts highcharts-react-official highcharts-sankey
 
-import { useMemo, useRef } from "react";
 import {
   client,
   useConfig,
@@ -49,7 +48,11 @@ function App() {
       }
       const options = {
         title: {
-          text: "My chart",
+          text: undefined,
+        },
+        chart: {
+          height: window.innerHeight,
+          backgroundColor: "transparent",
         },
         accessibility: {
           point: {
