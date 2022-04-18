@@ -30,7 +30,7 @@ function App() {
 
     // transform sigmaData --> sankey data
     let dataMap = [];
-    if (sigmaData?.[dimensions[0]]) {
+    if (dimensions && sigmaData?.[dimensions[0]]) {
       for (let i = 0; i < dimensions.length - 1; i++) {
         for (let j = 0; j < sigmaData[dimensions[i]].length; j++) {
           const from = sigmaData[dimensions[i]][j];
