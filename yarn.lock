@@ -1671,10 +1671,17 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@sigmacomputing/plugin@^0.6.54":
-  version "0.6.54"
-  resolved "https://registry.npmjs.org/@sigmacomputing/plugin/-/plugin-0.6.54.tgz"
-  integrity sha512-o/wtoeKxKX1sTUdmm8w6tGBcI/pCem4ctMO15778oT/408Yi9O94irSvtDJgtrgqrDF9tn8GiPCNtGQjdbEqAQ==
+"@sigmacomputing/plugin-types@^0.7.37":
+  version "0.7.37"
+  resolved "https://registry.yarnpkg.com/@sigmacomputing/plugin-types/-/plugin-types-0.7.37.tgz#5b2095af9896a07f0d6fbfdafc71191493fea0bc"
+  integrity sha512-xDV1+bBnYfF5Cktk/lQpYoyGAfZEcHD+xIoCRfCF2KmHU65mbkdiBilYRDDSL2Upegh1t1xA7D3JN4HQW6w/Jw==
+
+"@sigmacomputing/plugin@^0.7.37":
+  version "0.7.37"
+  resolved "https://registry.yarnpkg.com/@sigmacomputing/plugin/-/plugin-0.7.37.tgz#c4967077f5b16aa1e76b3dab6980c6be251f5328"
+  integrity sha512-KFdQPv8uALQUq1wEto5V7MPWmJc6R4BH2mE2dANhs0+1DpLygSReGj3knySdJRjjVt4tCEc2boDfHjcI75h6sA==
+  dependencies:
+    "@sigmacomputing/plugin-types" "^0.7.37"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
